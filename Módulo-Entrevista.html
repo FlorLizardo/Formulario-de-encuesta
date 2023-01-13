@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <title>Formulario de encuesta</title>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  </head>
+<div class="all">
+    <header>
+      <h1 id="title">Formulario de encuesta de <em>Supermercados Prim</em></h1>
+      <em><p id="description">Gracias por ayudarnos a mejorar nuestros productos</p></em>
+      </header>
+    <form id="survey-form">
+      <div id="data-form">
+      <label for="name" id="name-label">Nombre</label>
+      <input id="name" type="text" placeholder="Introduzca su nombre" required
+          />
+        </div>
+      <div>
+      <label for="email" id="email-label">E-mail</label>
+      <input id="email" type="email" placeholder="Introduzca su e-mail" required
+        />
+     </div> 
+     <div>
+      <label for="number" id="number-label">Edad</label>
+      <input id="number" type="number" placeholder="Introduzca su edad" min=10 max=99 required
+         />
+     </div> 
+      
+      <div>
+        <p>¿Con qué frecuencia compras en nuestro supermercado?</p>
+        <select id="dropdown" name="frequency" required>
+          <option disabled selected value>Selecciona la opción correspondiente</option>
+          <option value="frequentemente">Frequentemente</option>
+          <option value="semana">Algunas veces durante la semana</option>
+          <option value="mes">Algunas veces durante el mes</option>
+          <option value="nunca">Casi nunca</option>
+        </select>
+        </div>
+      <div>
+        <p>¿Recomendarías nuestros productos a otra persona?</p>
+      <label for="definitivamente">
+        <input id="definitivamente" type="radio" name="recomendation" value="definitivamente" checked>Definitivamente
+      </label>
+     <label for="quizás">
+        <input id="quizás" type="radio" name="recomendation" value="quizás">Quizás
+      </label>
+    <label for="seguridad">
+        <input id="seguridad" type="radio" name="recomendation" value="no-estoy-seguro">No estoy seguro
+      </label>
+        </div>
+      <div>
+        <p>¿Qué tipo de productos deberían ser mejorados?
+          <span class="agregar">(Puedes marcar más de una opción)</span>
+        </p>
+        <div>
+        <label for="clean">
+          <input id="clean" type="checkbox" name="products" value="limpieza">Limpieza
+          </label>
+        </div>
+        <div>
+        <label for="home">
+          <input id="home" type="checkbox" name="products" value="hogar-y-cocina">Hogar y cocina
+          </label>
+      </div>
+        <div>
+        <label for="alimentation">
+          <input id="alimentation" type="checkbox" name="products" value="alimentos">Alimentos
+          </label>
+       </div> 
+        <div>
+        <label for="beauty">
+          <input id="beauty" type="checkbox" name="products" value="belleza">Belleza
+          </label>
+       </div> 
+        <div>
+        <label for="hygiene">
+          <input id="hygiene" type="checkbox" name="products" value="higiene">Higiene
+          </label>
+          </div>
+        </div>
+      <div>
+        <p>¿Tienes algún comentario o sugerencia?</p>
+        <textarea>Escribe aquí tus sugerencias.</textarea>
+        </div>
+      <div>
+        <button type="submit" id="submit">Enviar</button>
+        </div>
+      </form>
+     </div>
+     </html>
